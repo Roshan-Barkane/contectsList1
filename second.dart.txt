@@ -1,0 +1,329 @@
+// ignore_for_file: sort_child_properties_last
+import 'package:flutter/material.dart';
+
+class second extends StatefulWidget {
+  const second({super.key});
+
+  @override
+  State<second> createState() => _secondState();
+}
+
+class _secondState extends State<second> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(
+          title: const Text('Contects'),
+          backgroundColor: Color.fromARGB(255, 40, 0, 187),
+          foregroundColor: Colors.white,
+          shadowColor: Color.fromARGB(255, 63, 59, 59),
+          elevation: 20,
+          titleSpacing: 60,
+          actions: const [
+            Icon(Icons.more_vert),
+          ],
+          actionsIconTheme: const IconThemeData(size: 30),
+        ),
+        bottomNavigationBar: BottomNavigationBar(items: const [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.call, size: 30),
+            label: 'Call',
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.home,
+                size: 30,
+              ),
+              label: 'Home',
+              backgroundColor: Color.fromARGB(255, 40, 0, 187)),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.search, size: 30),
+              label: 'Search',
+              backgroundColor: Color.fromARGB(255, 40, 0, 187)),
+        ]),
+        drawer: const Drawer(),
+        body: ListView(
+            children: ListTile.divideTiles(context: context, tiles: [
+          const ListTile(
+            title: Text('Shubham Verma',
+                style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.blueGrey)),
+            subtitle: Text('+919926252056',
+                style: TextStyle(fontSize: 15, letterSpacing: 4)),
+            leading: Icon(
+              Icons.person,
+              size: 30,
+              color: Colors.black87,
+            ),
+            contentPadding: EdgeInsets.all(8),
+            trailing: Icon(
+              Icons.call,
+              size: 30,
+              color: Colors.green,
+            ),
+          ),
+          const ListTile(
+            title: Text('Lokesh Raniya',
+                style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.blueGrey)),
+            subtitle: Text('+917828120442',
+                style: TextStyle(fontSize: 15, letterSpacing: 4)),
+            leading: Icon(
+              Icons.person,
+              size: 30,
+              color: Colors.black87,
+            ),
+            contentPadding: EdgeInsets.all(8),
+            trailing: Icon(
+              Icons.call,
+              size: 30,
+              color: Colors.green,
+            ),
+          ),
+          const ListTile(
+            title: Text('Isan ',
+                style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.blueGrey)),
+            subtitle: Text('+919754261567',
+                style: TextStyle(fontSize: 15, letterSpacing: 4)),
+            leading: Icon(
+              Icons.person,
+              size: 30,
+              color: Colors.black87,
+            ),
+            contentPadding: EdgeInsets.all(8),
+            trailing: Icon(
+              Icons.call,
+              size: 30,
+              color: Colors.green,
+            ),
+          ),
+          const ListTile(
+            title: Text('Anurag Sir ji',
+                style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.blueGrey)),
+            subtitle: Text('+919584253413',
+                style: TextStyle(fontSize: 15, letterSpacing: 4)),
+            leading: Icon(
+              Icons.person,
+              size: 30,
+              color: Colors.black87,
+            ),
+            contentPadding: EdgeInsets.all(8),
+            trailing: Icon(
+              Icons.call,
+              size: 30,
+              color: Colors.green,
+            ),
+          ),
+          const ListTile(
+            title: Text('Pavan Sir ji',
+                style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.blueGrey)),
+            subtitle: Text('+918103466731',
+                style: TextStyle(fontSize: 15, letterSpacing: 4)),
+            leading: Icon(
+              Icons.person,
+              size: 30,
+              color: Colors.black87,
+            ),
+            contentPadding: EdgeInsets.all(8),
+            trailing: Icon(
+              Icons.call,
+              size: 30,
+              color: Colors.green,
+            ),
+          ),
+          const ListTile(
+            title: Text('Naman',
+                style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.blueGrey)),
+            subtitle: Text('+919893528612',
+                style: TextStyle(fontSize: 15, letterSpacing: 4)),
+            leading: Icon(
+              Icons.person,
+              size: 30,
+              color: Colors.black87,
+            ),
+            contentPadding: EdgeInsets.all(8),
+            trailing: Icon(
+              Icons.call,
+              size: 30,
+              color: Colors.green,
+            ),
+          ),
+          const ListTile(
+            title: Text('Yash Yadav',
+                style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.blueGrey)),
+            subtitle: Text('+919470419477',
+                style: TextStyle(fontSize: 15, letterSpacing: 4)),
+            leading: Icon(
+              Icons.person,
+              size: 30,
+              color: Colors.black87,
+            ),
+            contentPadding: EdgeInsets.all(8),
+            trailing: Icon(
+              Icons.call,
+              size: 30,
+              color: Colors.green,
+            ),
+          ),
+          const ListTile(
+            title: Text('Ritik Shahu',
+                style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.blueGrey)),
+            subtitle: Text('+917470544914',
+                style: TextStyle(fontSize: 15, letterSpacing: 4)),
+            leading: Icon(
+              Icons.person,
+              size: 30,
+              color: Colors.black87,
+            ),
+            contentPadding: EdgeInsets.all(8),
+            trailing: Icon(
+              Icons.call,
+              size: 30,
+              color: Colors.green,
+            ),
+          ),
+          const ListTile(
+            title: Text('Yogesh',
+                style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.blueGrey)),
+            subtitle: Text('+916263851934',
+                style: TextStyle(fontSize: 15, letterSpacing: 4)),
+            leading: Icon(
+              Icons.person,
+              size: 30,
+              color: Colors.black87,
+            ),
+            contentPadding: EdgeInsets.all(8),
+            trailing: Icon(
+              Icons.call,
+              size: 30,
+              color: Colors.green,
+            ),
+          ),
+          const ListTile(
+            title: Text('Priyansh',
+                style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.blueGrey)),
+            subtitle: Text('+917067612077',
+                style: TextStyle(fontSize: 15, letterSpacing: 4)),
+            leading: Icon(
+              Icons.person,
+              size: 30,
+              color: Colors.black87,
+            ),
+            contentPadding: EdgeInsets.all(8),
+            trailing: Icon(
+              Icons.call,
+              size: 30,
+              color: Colors.green,
+            ),
+          ),
+          const ListTile(
+            title: Text('Rambabu',
+                style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.blueGrey)),
+            subtitle: Text('+918103606083',
+                style: TextStyle(fontSize: 15, letterSpacing: 4)),
+            leading: Icon(
+              Icons.person,
+              size: 30,
+              color: Colors.black87,
+            ),
+            contentPadding: EdgeInsets.all(8),
+            trailing: Icon(
+              Icons.call,
+              size: 30,
+              color: Colors.green,
+            ),
+          ),
+          const ListTile(
+            title: Text('Sandip',
+                style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.blueGrey)),
+            subtitle: Text('+917261048972',
+                style: TextStyle(fontSize: 15, letterSpacing: 4)),
+            leading: Icon(
+              Icons.person,
+              size: 30,
+              color: Colors.black87,
+            ),
+            contentPadding: EdgeInsets.all(8),
+            trailing: Icon(
+              Icons.call,
+              size: 30,
+              color: Colors.green,
+            ),
+          ),
+          const ListTile(
+            title: Text('Sidarth Patel',
+                style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.blueGrey)),
+            subtitle: Text('+919301893663',
+                style: TextStyle(fontSize: 15, letterSpacing: 4)),
+            leading: Icon(
+              Icons.person,
+              size: 30,
+              color: Colors.black87,
+            ),
+            contentPadding: EdgeInsets.all(8),
+            trailing: Icon(
+              Icons.call,
+              size: 30,
+              color: Colors.green,
+            ),
+          ),
+          const ListTile(
+            title: Text('Adarsh bgi',
+                style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.blueGrey)),
+            subtitle: Text('+919407363641',
+                style: TextStyle(fontSize: 15, letterSpacing: 4)),
+            leading: Icon(
+              Icons.person,
+              size: 30,
+              color: Colors.black87,
+            ),
+            contentPadding: EdgeInsets.all(8),
+            trailing: Icon(
+              Icons.call,
+              size: 30,
+              color: Colors.green,
+            ),
+          ),
+        ]).toList()));
+  }
+}
